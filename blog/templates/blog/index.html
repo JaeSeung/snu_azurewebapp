@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>snu web</title>
+	</head>
+	<body>
+
+		{% for post in post %}
+			<li>
+				<a href="{% url "blog.views.post_detail" post.pk %}">{{post.title}}</a>
+			</li>
+		{% endfor %}
+
+	</body>
+</html>
